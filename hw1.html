@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Grace Web Development</title>
+</head>
+<body>
+    <h1 id="titled">Grace's HW1 submission</h1>
+    <p id="reflecition"> From this course, I hope to learn more about web development and how to make a web
+        <em> user friendly.</em> I hope to learn different coding languages and learn 
+        <strong>new concepts </strong> related to software design. Also work on cool projects! </p>
+        <img src="duck.jpeg" alt="Duck">
+    
+        
+        <br><p1>Duck image is found <a href="https://media.istockphoto.com/id/1166741650/vector/angry-cartoon-dug.jpg?s=612x612&w=0&k=20&c=SxkyRPT7tXaod55gDkXFA1HLaSMEHKp521otvKApYsw=">here</a>.</p1> 
+        <button id="fancier">Make this page fancier!</button>
+       
+        
+        
+        <style>
+            h1 {
+                color: rgb(40, 40, 40);
+                background-color: #b5eaaa;
+            }
+            p1 {
+                font-size: 12pt;
+                border: 2px solid black; 
+                padding: 12px; 
+                display: inline-block; 
+            }
+            /* p {
+                font-size: 12pt;
+                margin-left: 10px;
+                border: 2px solid black; 
+                padding: 12px; 
+                display: inline-block; 
+            } */
+
+        </style>
+        <p>Change heading color to: 
+            <button id="white-btn">White</button>
+            <button id="green-btn">Green</button>
+            <button id="blue-btn">Blue</button>
+            <button id="black-btn">Black</button>
+
+         </p>
+         <script> 
+            // let fancierButton = document.getElementById("fancier");
+
+            // fancierButton.addEventListener("click", function() {
+            //     let heading = document.getElementById("reflection");
+            //     heading.style.border = "2px solid black"
+            // });
+
+            let whiteBtn = document.getElementById("white-btn");
+            whiteBtn.addEventListener("click", function() {
+                changeTextColor("white");
+            });
+            
+            let greenBtn = document.getElementById("green-btn");
+            greenBtn.addEventListener("click", function() {
+                changeTextColor("green");
+            });         
+
+            let blueBtn = document.getElementById("blue-btn");
+            blueBtn.addEventListener("click", function() {
+                changeTextColor("blue");
+            }); 
+
+            let blacktn = document.getElementById("black-btn");
+            blackBtn.addEventListener("click", function() {
+                changeTextColor("black");
+            });
+
+            function changeTextColor(newColor) {
+                let heading = document.getElementById("titled");
+                heading.style.color = newColor;
+         }
+            
+
+           
+            
+        </script>
+
+    
+
+            
+            
+         
+
+
+        
+</body>
+
+
+
+
+
+
+</html>
